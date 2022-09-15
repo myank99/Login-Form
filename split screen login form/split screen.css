@@ -1,0 +1,87 @@
+/* Split the screen in half */
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Control the left side */
+  .left {
+    left: 0;
+    background-color: #111;
+    background: url('./:bg.jpg');
+  }
+  
+  /* Control the right side */
+  .right {
+    right: 0;
+    background-color: rgb(143, 116, 116);
+    background: url('abc.jpg');
+  }
+  
+  /* If you want the content centered horizontally and vertically */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  /* Style the image inside the centered container, if needed */
+  .centered img {
+    width: 150px;
+    border-radius: 50%;
+  }
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30px ;
+    font-size: 17px;
+    padding: 8px;
+    background: url('./:bg.jpg');
+    text-align: center;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+input[type="submit"] {
+    background-color: rgb(75, 175, 75);
+    
+    text-align-last: right;
+   
+    
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+input[type="submit"]:hover {
+    background-color: blue;
+}
+.container {
+    background-color: rgb(122, 156, 185);
+   
+    position: absolute;
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 50px 50px 50px;
+    border:1px solid gray;
+    border-radius: 4px;
+}
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
